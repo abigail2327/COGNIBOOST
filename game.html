@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagnosis Through a Game! </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    
+    
+    <div id="ground"></div>
+    <div id="character"><img src="images/elmo-removebg-preview.png" style="height: 80px;"  /></div>
+    <div class="obstacles"></div>
+    <div unselectable="on" class="score">
+        Score: <span>0</span>
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            // Perform an Ajax request to fetch the text
+            $.ajax({
+                url: 'your_text_endpoint',
+                method: 'GET',
+                success: function(data){
+                    // Update the placeholder with the fetched text
+                    $('#preGameText').html(data);
+                },
+                error: function(xhr, status, error){
+                    // Handle errors if any
+                    console.error(error);
+                }
+            });
+
+            // Show a pop-up text when the page is done loading
+            alert('This is the Tale of the ADHD Elmo!');
+        });
+    </script>
+</body>
+
+</html>

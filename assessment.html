@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>CogniBoost</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- font awesome cdn -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- fonts -->
+        <link rel = "stylesheet" href = "font/fonts.css">
+        <!-- normalize css -->
+        <link rel = "stylesheet" href = "css/normalize.css">
+        <!-- custom css -->
+        <link rel = "stylesheet" href = "css/utility.css">
+        <link rel = "stylesheet" href = "css/style.css">
+        <link rel = "stylesheet" href = "css/responsive.css">
+    </head>
+    <body>
+        <!-- navbar  -->
+        <nav class = "navbar">
+            <div class = "container flex">
+                <a href = "index.html" class = "site-brand">
+                    Cogni<span>Boost</span>
+                </a>
+
+                <button type = "button" id = "navbar-show-btn" class = "flex">
+                    <i class = "fas fa-bars"></i>
+                </button>
+                <div id = "navbar-collapse">
+                    <button type = "button" id = "navbar-close-btn" class = "flex">
+                        <i class = "fas fa-times"></i>
+                    </button>
+                    <ul class = "navbar-nav">
+                        <li class = "nav-item">
+                            <a href = "index.html" class = "nav-link">Home</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "assessment.html" class = "nav-link">Assessment</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "game.html" class = "nav-link">Your CogniBoost</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "testimonies.html" class = "nav-link">Testimonies</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "contact.html" class = "nav-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- end of navbar  -->
+
+        <!-- header -->
+        <header class = "flex header-sm">
+            <div class = "container">
+                <div class = "header-title">
+                    <h1>Time for a Quiz!</h1>
+                        <p>Atleast 75% of the Adult Population still remains unassessed till this day...</p></div>
+            </div>
+        </header>
+        <!-- header -->
+        <body>
+            <div class="container mt-3 mb-3">
+                <h2><strong>Take Our Quick ADHD Quiz</strong></h2>
+                <p>This quiz will help you understand if you are experiencing common symptoms of ADHD.</p>
+                <p>Please answer based on your experiences over the past 6 months.</p>
+        
+                <form action action=registration.php 
+               method="post" id="quiz">
+                    <div class="mb-3">
+                        <label for="q1" class="form-label bold-label">Question 1: I find it difficult finishing a task or project.</label>
+                        <div class="form-check d-flex justify-content-between">
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="radio" name="q1" id="q1_never" value="never" required />
+                                <label class="form-check-label" for="q1_never">Never</label>
+                            </div>
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="radio" name="q1" id="q1_rarely" value="rarely" required />
+                                <label class="form-check-label" for="q1_rarely">Rarely</label>
+                            </div>
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="radio" name="q1" id="q1_sometimes" value="sometimes"
+                                    required />
+                                <label class="form-check-label" for="q1_sometimes">Sometimes</label>
+                            </div>
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="radio" name="q1" id="q1_often" value="often" />
+                                <label class="form-check-label" for="q1_often">Often</label>
+                            </div>
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="radio" name="q1" id="q1_very_often" value="very often"
+                                    required />
+                                <label class="form-check-label" for="q1_very_often">Very Often</label>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <br>
+        
+                    <div class="mb-3">
+                        <label for="q2" class="form-label bold-label">Question 2: I find it difficult to organise myself or a task.</label>
+                        <div class="form-check d-flex justify-content-between">
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="radio" name="q2" id="q2_never" value="never" required />
+                                <label class="form-check-label" for="q2_never">Never</label>
+                            </div>
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="radio" name="q2" id="q2_rarely" value="rarely" required />
+                                <label class="form-check-label" for="q2_rarely">Rarely</label>
+                            </div>
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="radio" name="q2" id="q2_sometimes" value="sometimes"
+                                    required />
+                                <label class="form-check-label" for="q2_sometimes">Sometimes</label>
+                            </div>
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="radio" name="q2" id="q2_often" value="often" required />
+                                <label class="form-check-label" for="q2_often">Often</label>
+                            </div>
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="radio" name="q2" id="q2_very_often" value="very often"
+                                    required />
+                                <label class="form-check-label" for="q2_very_often">Very Often</label>
+                            </div>
+                        </div>
+                    </div>
+        <br>
+                    <div class="mb-3">
+                        <label for="q3" class="form-label bold-label">Question 3: I find it difficult to remember important appointments or obligations.
+        
+                        </label>
+                        <div class="form-check d-flex justify-content-between">
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="radio" name="q3" id="q3_never" value="never" required />
+                                <label class="form-check-label" for="q3_never">Never</label>
+                            </div>
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="radio" name="q3" id="q3_rarely" value="rarely" required />
+                                <label class="form-check-label" for="q3_rarely">Rarely</label>
+                            </div>
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="radio" name="q3" id="q3_sometimes" value="sometimes"
+                                    required />
+                                <label class="form-check-label" for="q3_sometimes">Sometimes</label>
+                            </div>
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="radio" name="q3" id="q3_often" value="often" required />
+                                <label class="form-check-label" for="q3_often">Often</label>
+                            </div>
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="radio" name="q3" id="q3_very_often" value="very often"
+                                    required />
+                                <label class="form-check-label" for="q3_very_often">Very Often</label>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="mb-3">
+                        <label for="q4" class="form-label bold-label">Question 4: If a task or project requires a lot of thought I will often delay in getting it started.</label>
+                        <div class="form-check d-flex justify-content-between">
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="radio" name="q4" id="q4_never" value="never" required />
+                                <label class="form-check-label" for="q4_never">Never</label>
+                            </div>
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="radio" name="q4" id="q4_rarely" value="rarely" required />
+                                <label class="form-check-label" for="q4_rarely">Rarely</label>
+                            </div>
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="radio" name="q4" id="q4_sometimes" value="sometimes"
+                                    required />
+                                <label class="form-check-label" for="q4_sometimes">Sometimes</label>
+                            </div>
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="radio" name="q4" id="q4_often" value="often" required />
+                                <label class="form-check-label" for="q4_often">Often</label>
+                            </div>
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="radio" name="q4" id="q4_very_often" value="very often"
+                                    required />
+                                <label class="form-check-label" for="q4_very_often">Very Often</label>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+        
+                    <div class="mb-3">
+                        <label for="q5" class="form-label bold-label">Question 5: I find it difficult to sit still and often fidget or move.</label>
+                        <div class="form-check d-flex justify-content-between">
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="radio" name="q5" id="q5_never" value="never" required />
+                                <label class="form-check-label" for="q5_never">Never</label>
+                            </div>
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="radio" name="q5" id="q5_rarely" value="rarely" required />
+                                <label class="form-check-label" for="q5_rarely">Rarely</label>
+                            </div>
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="radio" name="q5" id="q5_sometimes" value="sometimes"
+                                    required />
+                                <label class="form-check-label" for="q5_sometimes">Sometimes</label>
+                            </div>
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="radio" name="q5" id="q5_often" value="often" required />
+                                <label class="form-check-label" for="q5_often">Often</label>
+                            </div>
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="radio" name="q5" id="q5_very_often" value="very often"
+                                    required />
+                                <label class="form-check-label" for="q5_very_often">Very Often</label>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+        
+                    <div class="mb-3">
+                        <label for="q6" class="form-label bold-label">Question 6: I feel as if being ‘on the go’ and feel compelled to do things, as if driven by a motor’.</label>
+                        <div class="form-check d-flex justify-content-between">
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="radio" name="q6" id="q6_never" value="never" required />
+                                <label class="form-check-label" for="q6_never">Never</label>
+                            </div>
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="radio" name="q6" id="q6_rarely" value="rarely" required />
+                                <label class="form-check-label" for="q6_rarely">Rarely</label>
+                            </div>
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="radio" name="q6" id="q6_sometimes" value="sometimes"
+                                    required />
+                                <label class="form-check-label" for="q6_sometimes">Sometimes</label>
+                            </div>
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="radio" name="q6" id="q6_often" value="often" required />
+                                <label class="form-check-label" for="q6_often">Often</label>
+                            </div>
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="radio" name="q6" id="q6_very_often" value="very often"
+                                    required />
+                                <label class="form-check-label" for="q6_very_often">Very Often</label>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+        
+                    <div class="mb-3">
+                        <label for="q7" class="form-label bold-label">Question 7: My mind feels very cluttered and it is hard for me to concentrate on one thing at a time.</label>
+                        <div class="form-check d-flex justify-content-between">
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="radio" name="q7" id="q7_never" value="never" required />
+                                <label class="form-check-label" for="q7_never">Never</label>
+                            </div>
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="radio" name="q7" id="q7_rarely" value="rarely" required />
+                                <label class="form-check-label" for="q7_rarely">Rarely</label>
+                            </div>
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="radio" name="q7" id="q7_sometimes" value="sometimes"
+                                    required />
+                                <label class="form-check-label" for="q7_sometimes">Sometimes</label>
+                            </div>
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="radio" name="q7" id="q7_often" value="often" required />
+                                <label class="form-check-label" for="q7_often">Often</label>
+                            </div>
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="radio" name="q7" id="q7_very_often" value="very often"
+                                    required />
+                                <label class="form-check-label" for="q7_very_often">Very Often</label>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+        
+                    <div class="mb-3">
+                        <label for="q8" class="form-label bold-label">Question 8: I make decisions quickly and fail to think through the consequences.</label>
+                        <div class="form-check d-flex justify-content-between">
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="radio" name="q8" id="q8_never" value="never" required />
+                                <label class="form-check-label" for="q8_never">Never</label>
+                            </div>
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="radio" name="q8" id="q8_rarely" value="rarely" required />
+                                <label class="form-check-label" for="q8_rarely">Rarely</label>
+                            </div>
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="radio" name="q8" id="q8_sometimes" value="sometimes"
+                                    required />
+                                <label class="form-check-label" for="q8_sometimes">Sometimes</label>
+                            </div>
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="radio" name="q8" id="q8_often" value="often" required />
+                                <label class="form-check-label" for="q8_often">Often</label>
+                            </div>
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="radio" name="q8" id="q8_very_often" value="very often"
+                                    required />
+                                <label class="form-check-label" for="q8_very_often">Very Often</label>
+                            </div>
+                        </div>
+                    </div>
+        <br>
+                    <div class="mb-3">
+                        <label for="q9" class="form-label bold-label">Question 9: I misplace things (or have difficulty finding them).</label>
+                        <div class="form-check d-flex justify-content-between">
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="radio" name="q9" id="q9_never" value="never" required />
+                                <label class="form-check-label" for="q9_never">Never</label>
+                            </div>
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="radio" name="q9" id="q9_rarely" value="rarely" required />
+                                <label class="form-check-label" for="q9_rarely">Rarely</label>
+                            </div>
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="radio" name="q9" id="q9_sometimes" value="sometimes"
+                                    required />
+                                <label class="form-check-label" for="q9_sometimes">Sometimes</label>
+                            </div>
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="radio" name="q9" id="q9_often" value="often" required />
+                                <label class="form-check-label" for="q9_often">Often</label>
+                            </div>
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="radio" name="q9" id="q9_very_often" value="very often"
+                                    required />
+                                <label class="form-check-label" for="q9_very_often">Very Often</label>
+                            </div>
+                        </div>
+                    </div>
+        <br>
+                    <div class="mb-3">
+                        <label for="q10" class="form-label bold-label">Question 10: I find it difficult concentrating on people when they are speaking to me.</label>
+                        <div class="form-check d-flex justify-content-between">
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="radio" name="q10" id="q10_never" value="never" required>
+                                <label class="form-check-label" for="q10_never">Never</label>
+                            </div>
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="radio" name="q10" id="q10_rarely" value="rarely" required>
+                                <label class="form-check-label" for="q10_rarely">Rarely</label>
+                            </div>
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="radio" name="q10" id="q10_sometimes" value="sometimes"
+                                    required>
+                                <label class="form-check-label" for="q10_sometimes">Sometimes</label>
+                            </div>
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="radio" name="q10" id="q10_often" value="often" required>
+                                <label class="form-check-label" for="q10_often">Often</label>
+                            </div>
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="radio" name="q10" id="q10_very_often" value="very often"
+                                    required>
+                                <label class="form-check-label" for="q10_very_often">Very Often</label>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <button type="submit" class="btn btn-primary btn-done">Submit</button>
+                    
+                </form>
+                <br>
+                <div class="mt-5">
+                    <h4>Want to save your results?</h4>
+                    <a href="registration.html">Register (Optional)</a></div>
+                <div id="result"></div>
+
+                <br/><br/>
+        
+                   
+        
+            </div>
+            <script src="quiz.js"></script>
+        </body>
+       
+
+        <footer class = "py-4">
+            <div class = "container footer-row">
+                <div class = "footer-item">
+                    <a href = "index.html" class = "site-brand">
+                        Cogni<span>Boost</span>
+                    </a>
+                    <p class = "text">Connect with us<br>
+                        We would love to respond to your quesries and help you. Feel free to get in touch with us!</p>
+                </div>
+
+                <div class = "footer-item">
+                    <h2>Follow us on: </h2>
+                    <ul class = "social-links">
+                        <li>
+                            <a href = "#">
+                                <i class = "fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href = "#">
+                                <i class = "fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href = "#">
+                                <i class = "fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href = "#">
+                                <i class = "fab fa-pinterest"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href = "#">
+                                <i class = "fab fa-google-plus"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class = "footer-item">
+                    <h2>Places To visit:</h2>
+                    <ul>
+                        <li><a href = "#">Cambridge Medical Center</a></li>
+                        <li><a href = "#">German Neuroscience Center</a></li>
+                        <li><a href = "#">Al Soor Specialits Clinic</a></li>
+                        <li><a href = "#">American Hospital</a></li>
+                    </ul>
+                </div>
+
+                <div class = "subscribe-form footer-item">
+                    <h2>Subscribe for More News on ADHD!</h2>
+                    <form class = "flex">
+                        <input type = "email" placeholder="Enter Email" class = "form-control">
+                        <input type = "submit" class = "btn" value = "Subscribe">
+                    </form>
+                </div>
+            </div>
+        </footer>
+        <!-- end of footer -->
+
+        <!-- js -->
+        <script src = "js/script.js"></script>
+        <script>
+            // image modal
+            const allGalleryItem = document.querySelectorAll('.gallery-item');
+            const imgModalDiv = document.getElementById('img-modal-box');
+            const modalCloseBtn = document.getElementById('modal-close-btn');
+            const nextBtn = document.getElementById('next-btn');
+            const prevBtn = document.getElementById('prev-btn');
+            let imgIndex = 0;
+
+            allGalleryItem.forEach((galleryItem) => {
+                galleryItem.addEventListener('click', () => {
+                    imgModalDiv.style.display = "block";
+                    let imgSrc = galleryItem.querySelector('img').src;
+                    imgIndex = parseInt(imgSrc.split("-")[1].substring(0, 1));
+                    showImageContent(imgIndex);
+                })
+            });
+
+            // next click
+            nextBtn.addEventListener('click', () => {
+                imgIndex++;
+                if(imgIndex > allGalleryItem.length){
+                    imgIndex = 1;
+                }
+                showImageContent(imgIndex);
+            });
+
+            // previous click
+            prevBtn.addEventListener('click', () => {
+                imgIndex--;
+                if(imgIndex <= 0){
+                    imgIndex = allGalleryItem.length;
+                }
+                showImageContent(imgIndex);
+            });
+
+            function showImageContent(index){
+                imgModalDiv.querySelector('#img-modal img').src = `images/gallery-${index}.jpg`;
+            }
+
+            modalCloseBtn.addEventListener('click', () => {
+                imgModalDiv.style.display = "none";
+            })
+        </script>
+    </body>
+</html>
